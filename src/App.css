@@ -1,0 +1,123 @@
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-uploader {
+  grid-row: span 2;
+  width: 300px;
+  aspect-ratio: 300/165;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: #f8f9fc;
+  background-size: cover;
+  border-radius: 5%;
+  position: relative;
+}
+
+.image-uploader input[type="file"] {
+  display: none;
+}
+
+.image-button {
+  width: max-content;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #0266ff;
+  color: #0266ff;
+  background: transparent !important;
+  border-radius: 10px;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-button .icon-add {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url("src/asset/icon/add/icon-add-blue.svg") no-repeat center;
+}
+
+/* Loader */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: rgb(112 85 85 / 50%);
+  z-index: 2;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* Common */
+main {
+  color: #10131c;
+  background: #fff;
+  padding: 40px 10px 60px 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.horizontal-centering {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 860px) {
+  main {
+    padding: 60px 80px;
+  }
+  .horizontal-centering {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 859px) {
+  main {
+    padding: 60px 60px;
+  }
+  .horizontal-centering {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .image-uploader {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 100%;
+    max-width: 410px;
+    aspect-ratio: 410/320;
+  }
+}

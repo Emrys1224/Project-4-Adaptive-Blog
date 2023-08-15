@@ -1,0 +1,45 @@
+.comment {
+  padding: 20px 0;
+  border-bottom: 1px solid #ebeff8;
+  font-family: Inter;
+  font-style: normal;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.comment p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.author {
+  color: #625f87;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+
+.text,
+.comment ul {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.36px;
+}
+
+.comment ul {
+  color: #9d9db5;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}

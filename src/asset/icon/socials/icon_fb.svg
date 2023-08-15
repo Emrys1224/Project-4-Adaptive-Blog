@@ -1,0 +1,11 @@
+<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_fb" clip-path="url(#clip0_1_1234)">
+<circle id="bg" cx="15.6667" cy="15" r="15" fill="#192140"/>
+<path id="icon" d="M21.0731 18.7749L21.7256 14.6936H17.8078V11.8363C17.8078 10.6933 18.2158 9.79501 20.0113 9.79501H21.8891V6.04057C20.8273 5.87714 19.6855 5.71484 18.6227 5.71484C15.2762 5.71484 12.9081 7.75611 12.9081 11.4294V14.6947H9.23706V18.7761H12.9081V29.1445C14.5242 29.471 16.1893 29.471 17.8055 29.1445V18.7783L21.0731 18.7749Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1_1234">
+<rect width="30" height="30" fill="white" transform="translate(0.666748)"/>
+</clipPath>
+</defs>
+</svg>

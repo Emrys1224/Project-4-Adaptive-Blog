@@ -1,0 +1,102 @@
+.post-list-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-container {
+  max-width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.btn-group {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group button,
+.btn-add {
+  color: #0266ff;
+  background: #fff;
+  border: 1px solid #0266ff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.btn-posts-selection {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-posts-selection button {
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+.btn-posts-selection .active {
+  color: #fff;
+  background: #0266ff;
+}
+
+.btn-add {
+  padding: 8px;
+  border: 1px solid #0266ff;
+  border-radius: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-add .icon-add {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url("src/asset/icon/add/icon-add-blue.svg") no-repeat center;
+}
+
+.btn-add:active {
+  color: #fff;
+  background: #0266ff;
+}
+
+.btn-add:active .icon-add {
+  background: url("src/asset/icon/add/icon-add-white.svg") no-repeat center;
+}
+
+.btn-add span {
+  display: none;
+}
+
+@media only screen and (min-width: 760px) {
+  .card-container {
+    grid-gap: 40px;
+  }
+
+  .btn-group button,
+  .btn-add {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+  }
+
+  .btn-posts-selection button,
+  .btn-add {
+    padding: 13px 20px;
+  }
+
+  .btn-add {
+    border-radius: 10px;
+  }
+
+  .btn-add span {
+    display: inline;
+  }
+}

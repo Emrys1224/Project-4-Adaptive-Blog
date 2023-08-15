@@ -1,0 +1,125 @@
+/* Header  */
+
+header {
+  background: #192140;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-burger {
+  width: 40px;
+  height: 40px;
+  background: url("src/asset/icon/burgerMenu/burgerMenuHover.svg") no-repeat
+    center;
+  border: none;
+}
+
+.btn-burger:active {
+  background: url("src/asset/icon/burgerMenu/burgerMenuActive.svg") no-repeat
+    center;
+}
+
+.nav-group {
+  width: 100%;
+  display: none;
+}
+
+.nav-group.shown {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-container,
+.login-container {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-container .nav-link {
+  color: #fff;
+}
+
+.nav-container .current {
+  color: #dcf10d;
+  text-decoration-line: underline;
+}
+
+.nav-container {
+  font-weight: 500;
+}
+
+#sign-up {
+  color: #9d9db5;
+  font-weight: 700;
+}
+
+#log-in {
+  padding: 16px 20px;
+  color: #0266ff;
+  font-weight: 600;
+  border-radius: 40px;
+  border: 1px solid #0266ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#log-in:active {
+  color: #fff;
+  background-color: #0266ff;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+  header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  /* Header */
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  .btn-burger {
+    display: none;
+  }
+
+  .nav-group,
+  .nav-group.shown {
+    width: fit-content;
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-container,
+  .login-container {
+    margin-left: 80px;
+    flex-direction: row;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,11 @@
+.icon-likes {
+  width: 24px;
+  height: 24px;
+  border: none;
+  display: inline-block;
+  background: url("src/asset/icon/like/like-default.svg") no-repeat center;
+}
+
+.icon-likes.active {
+  background: url("src/asset/icon/like/like-active.svg") no-repeat center;
+}
